@@ -7,9 +7,9 @@
   }
   
   @mixin tabletOnly {
-    @media (min-device-width: 768px) and (max-device-width: 997px) { @content; }
+    @media (min-device-width: 768px) and (max-device-width: 1085px) { @content; }
   }
   
   @mixin desktop {
-    @media (min-width: 998px) { @content; }
+    @media (min-width: 1086px) { @content; }
   }

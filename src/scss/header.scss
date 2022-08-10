@@ -1,9 +1,14 @@
 .main {
     font-family: Arial;
     width: 100%;
+    @include desktop {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .menu {
+    font-family: Arial;
     display: flex;
     background: #00BFF3;
     width: 100%;
@@ -24,11 +29,13 @@
     }
 
     .menu_wrapper {
-        width: 1040px;
         height: 104px;
         margin: 0 auto;
         display: flex;
         align-items: center;
+        @include desktop {
+            width: 82%
+        }
         .ul_menu {
             display: flex;
             flex-direction: row;
@@ -50,6 +57,7 @@
             }
         
             li:nth-child(2) {
+                display: none;
                 width: 149px;
                 height: 48px;
                 font-style: normal;
@@ -58,8 +66,8 @@
                 line-height: 18px;
                 color: #FFFFFF;
                 text-align: bottom;
-                @include phoneDown {
-                    display: none;
+                @include desktop {
+                    display: block;
                 }
             }
         

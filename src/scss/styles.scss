@@ -7,3 +7,14 @@ img {
     width: 100%;
     height: auto;
 }
+//Отключить декорации ссылок
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: #CB0000;
+}
