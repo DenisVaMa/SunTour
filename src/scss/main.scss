@@ -1,0 +1,105 @@
+
+.ad {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+
+    .eclipse {
+        position: relative;
+        top: 268px;
+        left: 31px;
+        width: 250px;
+        height: 250px;
+        background: url(/src/img/ellipse.png) no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hotel_ad {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 55px;
+        @include desktop {
+            width: 80%;
+
+        }
+    }
+    
+    .places {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        div {
+            margin: 10px 0 10px 0;
+        }
+    }
+}
+
+
+
+article {
+    margin: 0 auto;
+    h1 {
+        font-family: 'Trebuchet MS';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 52px;
+        color: #000000;
+        margin-bottom: 26px;
+    }
+
+    .article-wrapper {
+        width: 80%;
+    
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+    
+        }
+        h2 {
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 25px;        
+            color: #000000;
+            margin-bottom: 6px;
+        }
+        p:nth-child(1) {
+            margin-bottom:16px;
+        }
+        p:nth-child(2) {
+            margin-bottom:2px;
+        }
+    
+    }
+    
+    .quote {
+        display: flex;
+        p {
+            font-family: 'Arial';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #000000;
+            padding-left: px;
+        }
+        .quote_rectange {
+            width: 8px;
+            height: 120px;
+            background: #00BFF3;
+        }
+    }
+}
+
+
+
