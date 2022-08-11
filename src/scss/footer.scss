@@ -1,0 +1,46 @@
+.footer_line {
+    width: 74%;
+    border: 1px solid #777777;
+    width: 100%;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding-bottom: 16px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    ul {
+        display: flex;
+        flex-direction: row;
+
+            li:nth-child(1) {
+                a div {
+                    width: 32px;
+                    height: 32px;
+                    background: url(/src/img/icons/facebook-logo-blue.svg) no-repeat;
+                }
+            }
+            li:nth-child(2) {
+                a div {
+                    width: 32px;
+                    height: 32px;
+                    background: url(/src/img/icons/g-logo-blue.svg) no-repeat;
+                }
+            }
+            li:nth-child(3) {
+                 a div {
+                    width: 32px;
+                    height: 32px;
+                    background: url(/src/img/icons/instagram-logo-blue.svg) no-repeat;
+                }
+            }
+
+    }
+}

@@ -20,7 +20,7 @@
         width: 100%;
         height: auto;
         margin: 0 auto;
-        margin-bottom: 55px;
+        margin-bottom: 46px;
     }
 
     .places {
@@ -49,6 +49,17 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 10px;
+            @include desktop {
+                padding: 0;
+            }
+
+            p:nth-child(1) {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+            }
 
             p:nth-child(2) {
                 font-style: normal;
@@ -91,9 +102,20 @@ article {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 30px;
+        @include desktop {
+            padding: 0
+        }
 
         .article-wrapper2 {
-            width: 69%;
+            img {
+                width: 776px;
+                height: 128px;
+            }
+            @include desktop {
+                width: 69%;
+            }
             p {
                 font-style: normal;
                 font-weight: 400;
@@ -122,6 +144,7 @@ article {
 
             .quote {
                 display: flex;
+                justify-content: space-between;
 
                 p {
                     font-family: 'Arial';
@@ -133,15 +156,21 @@ article {
                     padding-left: 10px;
                 }
 
-                .quote_rectange {
+                div:first-child {
                     width: 8px;
-                    height: 100%;
+                    height: 120px;
                     background: #00BFF3;
                     margin-left: 48px;
                 }
             }
+            ul {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+            }
         }
-        img {
+        .whr {
             display: none;
             @include desktop {
                 display: block;
@@ -149,6 +178,14 @@ article {
                 height: 319px;
                 margin-top: 220px;
             }
+        }
+        .table {
+            display: none;
+            @include tabletUp {
+                display: flex;
+            }
+            width: 776px;
+            height: 128px;
         }
     }
 
