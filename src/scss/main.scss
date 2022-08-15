@@ -91,15 +91,23 @@
 
 article {
     margin: 0 auto;
+    .transfer {
+        display: none;
+    }
+
+    @media (min-device-width: 1376px) and (max-device-width: 1490px) {
+        .transfer {
+            display: inline;
+        }
+    }
 
     h1 {
-        font-family: 'Trebuchet MS';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 52px;
-        color: #000000;
+        @include h1;
         margin-bottom: 26px;
+        padding: 10px;
+        @include desktop {
+            padding: 0
+        }
     }
 
     .article-wrapper {

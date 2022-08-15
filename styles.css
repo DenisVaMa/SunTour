@@ -379,6 +379,14 @@
 article {
   margin: 0 auto;
 }
+article .transfer {
+  display: none;
+}
+@media (min-device-width: 1376px) and (max-device-width: 1490px) {
+  article .transfer {
+    display: inline;
+  }
+}
 article h1 {
   font-family: "Trebuchet MS";
   font-style: normal;
@@ -387,6 +395,12 @@ article h1 {
   line-height: 52px;
   color: #000000;
   margin-bottom: 26px;
+  padding: 10px;
+}
+@media (min-width: 1086px) {
+  article h1 {
+    padding: 0;
+  }
 }
 article .article-wrapper {
   display: -webkit-box;
