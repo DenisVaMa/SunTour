@@ -28,17 +28,21 @@
         flex-direction: column;
         margin: 0 auto;
         justify-content: space-between;
-        margin-bottom: 70px;
+        margin-bottom: 49px;
         font-family: 'Trebuchet MS';
-
         @include desktop {
             flex-direction: row;
             justify-content: space-between;
-            margin-bottom: 0;
-
             div:nth-child(1) {
                 margin-right: 20px;
             }
+        }
+
+        .place {
+            img {
+                margin-bottom: 10px;
+            }
+            
         }
 
         div {
@@ -114,7 +118,7 @@ article {
                 height: 128px;
             }
             @include desktop {
-                width: 69%;
+                width: 75%;
             }
             p {
                 font-style: normal;
@@ -134,17 +138,27 @@ article {
                 margin-bottom: 6px;
             }
 
+            h3 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 18px;
+                margin-top: 4px;
+                margin-bottom: 7px;
+            }
+
             p:nth-child(1) {
                 margin-bottom: 16px;
             }
 
             p:nth-child(2) {
-                margin-bottom: 2px;
+                margin-bottom: 10px;
             }
 
             .quote {
                 display: flex;
                 justify-content: space-between;
+                padding: 25px 0 26px 0;
 
                 p {
                     font-family: 'Arial';
@@ -153,21 +167,24 @@ article {
                     font-size: 14px;
                     line-height: 19px;
                     color: #000000;
-                    padding-left: 10px;
+                    padding-left: 15px;
+                    padding-top: 13px;
                 }
 
                 div:first-child {
                     width: 8px;
-                    height: 120px;
                     background: #00BFF3;
                     margin-left: 48px;
+                    border: solid 3px #00BFF3;
                 }
             }
             ul {
                 font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
-                line-height: 19px;
+                line-height: 24px;
+                padding-left: 10px;
+                margin-bottom: 11px;
             }
         }
         .whr {
@@ -176,7 +193,7 @@ article {
                 display: block;
                 width: 227px;
                 height: 319px;
-                margin-top: 220px;
+                margin-top: 140px;
             }
         }
         .table {
@@ -186,6 +203,7 @@ article {
             }
             width: 776px;
             height: 128px;
+            margin: 14px 0 14px 0;
         }
     }
 

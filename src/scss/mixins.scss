@@ -1,15 +1,79 @@
 @mixin phoneDown {
-    @media (max-device-width: 767px) { @content; }
+  @media (max-device-width: 767px) {
+    @content;
   }
-  
-  @mixin tabletUp {
-    @media (min-width: 768px) { @content; }
+}
+
+@mixin tabletUp {
+  @media (min-width: 768px) {
+    @content;
   }
-  
-  @mixin tabletOnly {
-    @media (min-device-width: 768px) and (max-device-width: 1085px) { @content; }
+}
+
+@mixin tabletOnly {
+  @media (min-device-width: 768px) and (max-device-width: 1085px) {
+    @content;
   }
-  
-  @mixin desktop {
-    @media (min-width: 1086px) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: 1086px) {
+    @content;
   }
+}
+
+
+
+@mixin zag {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #C4C4C4;
+}
+
+@mixin h1 {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  color: #C4C4C4;
+}
+
+@mixin p {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+}
+
+@mixin blockquote {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+}
+
+@mixin h2 {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+}
+
+@mixin h3 {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #C4C4C4;
+}
